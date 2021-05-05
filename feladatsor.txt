@@ -1,0 +1,100 @@
+Formula One feladatsor - Jedlik, középszintü érettségi 2020
+
+A következő feladatban egy weboldalt kell készítenie a Forma-1 történetével kapcsolatban a
+feladatleírás és a minta szerint.
+
+A forrásként kiadott weboldalon kell módosításokat végeznie a leírás és a minta
+alapján! 
+
+Ahol a feladat másként nem kéri, a formázási beállításokat a site.css stílusállományban
+végezze el, az új szelektorokat az állomány végén helyezze el!
+
+Nyissa meg az index.html állományt és szerkessze annak tartalmát az alábbiak szerint:
+---------------------------------------------------------------------------------------------------------
+1. A weboldal karakterkódolása utf-8, a weboldal nyelve magyar, a böngésző címsorában
+megjelenő cím „Formula One” legyen!
+---------------------------------------------------------------------------------------------------------
+2. A weboldal fejrészében helyezzen el hivatkozást a site.css stíluslapra, valamint a main.js
+állományra! Ügyeljen arra, hogy a jquery.min.js állomány hamarabb kerüljön betöltésre,
+mint a main.js!
+---------------------------------------------------------------------------------------------------------
+A weboldalon készítsen egy újabb menüpontot az alábbi leírás és a minta alapján:
+
+3.a. Az új menüpont a „Kezdőlap” és a „Leg-ek” menüpontok között helyezkedjen el! A neve
+„Történet” legyen és kattintásra az oldalon belül a history azonosítójú szekcióra
+ugorjon!
+
+3.b. A history azonosítójú szekciót formázza meg az alábbi három osztályazonosítóval:
+section-100, bg-image és p-2!
+
+3.c. A tortenete.txt állomány tartalmát másolja be a history azonosítójú szekcióba!
+
+3.d. Alakítsa ki a history azonosítójú szekción belül a bekezdéseket és a címsorokat!
+A „Története” felirat második szintű címsor, az egyes alcímek („A kezdetek”, „A Forma1 születése”, stb.) harmadik szintű címsorok legyenek!
+
+3.e. A „Története” második szintű címsort formázza meg a text-center és py-3
+osztályazonosítók segítségével!
+-----------------------------------------------------------------------------------------------------
+4. A „Leg-ek” (records) szekcióban a képeken látható versenyzők nevét („Rubens Barrichello”,
+„Michael Schumacher”, „Juan Manuel Fangio”), valamint a „Ferrari” csapatnevet a minta
+szerint alakítsa félkövérré! Ehhez hozzon létre a site.css stílusállományban egy saját
+szelektort, majd alkalmazza a kiemeléshez!
+----------------------------------------------------------------------------------------------------
+Az alábbi lépések segítségével alakítsa ki a legfiatalabb és legidősebb versenyző, valamint a
+legtöbb Grand Prix kereteket! (Az alábbi lépéseket háromszor kell végrehajtania, a három
+„leg”-hez kapcsolódóan. Mindhárom keretnek a helye egy-egy megjegyzéssel jelölve van az
+index.html dokumentumban.) A tartalomhoz tartozó szövegeket és fájlneveket megtalálja a
+legek.txt állományban.
+
+5.a. Hozzon létre keretet (div) és formázza meg az alábbi osztályazonosítókkal: bg-black,
+col-sm-12, col-md-4, p-3 és text-center!
+
+5.b. Az előző pontban létrehozott kereten belül hozzon létre egy harmadik szintű címsort, amit
+formázzon meg a következő osztályazonosítókkal: bg-dark, p-2 és w-100!
+
+5.c. Az így létrehozott címsorba írja vagy másolja be a címet („Legfiatalabb versenyző”,
+„Legidősebb versenyző”, „Legtöbb Grand Prix”)!
+
+5.d. A cím alá szúrja be az img könyvtárban található képeket (max_verstappen.jpg,
+louis_chiron.jpg, monza_info.jpg)! A képeket formázza meg a w-100
+osztályazonosítóval! Amennyiben a képek nem jelennek meg, vagy fölé viszik az
+egérkurzort, akkor a versenyző/pálya neve jelenjen meg („Max Verstappen”, „Louis
+Chiron”, „Monza”)!
+
+5.e. A képaláírásoknak hozzon létre a képek alatt egy-egy bekezdést, és másolja bele a képek
+alatti szövegeket a minta szerint!
+---------------------------------------------------------------------------------------------
+Végezze el az alábbi műveleteket az index.html dokumentum „Átlagsebesség számítás”
+(avgspeed) szekciójában!
+6.a. Az űrlap alatti JavaScript blokkban hívja meg a main.js fájlban definiált showCircuit
+nevű függvényt!
+
+6.b. A pályákat tartalmazó (circuit azonosítójú) lenyíló listát bővítse ki a monzai pályával!
+A megjelenő szöveg „Monza” legyen, az opció értéke pedig „ITA”!
+
+6.c. A köridő rögzítésére szolgáló beviteli (laptime azonosítójú) mezőt módosítsa úgy, hogy
+csak numerikus értéket (számot) lehessen rögzíteni benne!
+
+6.d. A main.js állományban készítse el a calculate függvény törzsét! A függvénynek a
+pálya hosszából és a köridőből kell átlagsebességet számolnia: a kiválasztott pálya hosszát
+kell elosztani a köridővel (a köridőt – mivel másodpercben van megadva – el kell osztani
+3600-zal). Az egyes pályák hossza km-ben:
+− Hungaroring (HUN): 4,381 km
+− Monaco (MON): 3,337 km
+− Spa-Francorchamps (BEL): 7,004 km
+− Monza (ITA): 5,793 km
+A kapott eredményt – mértékegységgel (km/h) együtt – jelenítse meg az átlagsebesség
+(averagespeed azonosítójú) mezőben!
+-----------------------------------------------------------------------------------------------
+7. A láblécben (footer) található linkeket alakítsa hivatkozássá! A két linkhez tartozó szöveg
+legyen „F1 történet” és „Wikipedia”!
+A következő beállításokat a site.css stíluslapon végezze!
+-----------------------------------------------------------------------------------------------
+8. Hozzon létre új elemszelektort a bekezdések formázásához! A bekezdések legyenek
+sorkizártak!
+-----------------------------------------------------------------------------------------------
+9. A weboldal háttérszíne legyen fekete (#000), a weboldalon megjelenő szöveg színe legyen
+fehér (#fff)!
+-----------------------------------------------------------------------------------------------
+10. Egészítse ki a láblécben található hivatkozáskra vonatkozó szelektort úgy, hogy a hivatkozások
+legyenek aláhúzva!
